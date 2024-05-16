@@ -1,0 +1,355 @@
+
+body {
+    background: #080808;
+    color: #fff;
+
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/Game\ Developer\ Resume\ Website\ in\ Black\ and\ White\ Grey\ Simple\ and\ Minimal\ St_20240510_125138_0001.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+
+
+}
+
+.logo {
+
+    width: 100px;
+    height: 80px;
+
+}
+
+nav ul li {
+
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: background 0.5s, transform 0.5s;
+
+}
+
+nav ul li:hover {
+    background-color: #ff004f;
+    transform: translate(0px -5px);
+
+    transition: 1s;
+}
+
+.header-text {
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+.header-text h1 span {
+    color: #ff004f;
+}
+
+/*-----------------about----------------*/
+.about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col1 {
+    flex-basis: 35%;
+}
+
+.col1 img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.col2 {
+    flex-basis: 60%;
+}
+
+.col2 h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.col-about {
+    display: flex;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.about-skill h3 {
+    padding: 10px 0px;
+    text-decoration: underline #ff004f 3px;
+}
+
+.about-skill p strong {
+    color: #ff004f;
+}
+
+.about-skill p small {
+    color: yellow;
+}
+
+.p-heading {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.project {
+    padding: 50px 0px;
+}
+
+.website img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 1.5s;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+
+.website {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.layer h3,
+p,
+a {
+    margin: 5px;
+}
+
+.layer {
+    height: 0;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 10px 0px;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.layer a {
+    margin-top: 20px;
+    padding: 3px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.website:hover img {
+    transform: scale(1.1);
+}
+
+.website:hover .layer {
+    height: 100%;
+}
+
+.column {
+    float: right;
+    width: 50%;
+    margin: -40px;
+
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #fff;
+    color: #ff004f;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left P,
+h1,
+a {
+    margin-top: 10PX;
+}
+
+.contact-left p i {
+    color: #ff004f;
+    margin: 8px;
+}
+
+.btn {
+    color: #fff;
+    border-radius: 5px;
+    border: #ff004f;
+
+    padding: 10px;
+    text-decoration: none;
+    background-color: #ff0051f7;
+    width: 30px;
+}
+
+.btn:hover {
+    background-color: #ff005170;
+}
+
+
+.skills-container {
+    margin: 20px 0;
+
+}
+
+.skills {
+    margin-bottom: 15px;
+}
+
+.skills h3 {
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    background-color: #f0f0f0;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.containers {
+    padding: 10px 20%;
+}
+
+.containers h1 {
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+}
+
+.skill-level {
+    background-color: #ff004f;
+    color: white;
+    text-align: center;
+    height: 100%;
+    line-height: 20px;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: url(img/2_20240510_125258_0001.png);
+    }
+    .container{
+        padding: 0 0;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+    .mbar{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+    nav ul {
+        position: fixed;
+        background: #ff004f;
+        top: 0;
+        right: -230px;
+        width: 100px;
+        height: 100vh;
+        padding-top: 0;
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .header-text {
+        margin-top: 60px;
+        font-size: 16px;
+    }
+    #header{
+        height: 50vh;
+    }
+    .col2 h1 {
+        font-size: 40px;
+
+    }
+    .col1,.col2{
+        flex-basis: 100%;
+    }
+   .contact-right{
+    display: none;
+   }
+   .p-heading{
+    font-size: 51px;
+   }
+}
